@@ -1,18 +1,18 @@
-Name: Shravani Pore
+## Name: Shravani Pore
 
-**Client Server side Integration:**
-Tomcat version: 9.0
-Servlet version: 4.0
-Java version: 17
+### **Client Server side Integration:**  
+Tomcat version: 9.0  
+Servlet version: 4.0  
+Java version: 17  
 
-**Python Assignments**
+### **Python Assignments**  
 Python version: 3.11.0
 
-**DBMS**
+### **DBMS**  
 MySQL is used.
 
-**Java Assignments**
-Jars used are added to a separate folder: Jars_Java Assignments
+### **Java Assignments**  
+Jars used are added to a separate folder: Jars_Java Assignments  
 Java version: 1.8
 
 
