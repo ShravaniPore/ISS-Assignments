@@ -1,0 +1,31 @@
+{
+  "category": "Electronics",
+  "products": [
+    {
+      "productId": "E101",
+      "name": "Samsung Galaxy S21",
+      "type": "Mobile",
+      "brand": "Samsung",
+      "price": 69999,
+      "inStock": true,
+      "specs": {
+        "ram": "8GB",
+        "storage": "128GB",
+        "battery": "4000mAh"
+      }
+    },
+    {
+      "productId": "E102",
+      "name": "Dell Inspiron 15",
+      "type": "Laptop",
+      "brand": "Dell",
+      "price": 59999,
+      "inStock": false,
+      "specs": {
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "processor": "Intel i5"
+      }
+    }
+  ]
+}
