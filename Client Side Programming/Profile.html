@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Client side programming</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="heading">We are event managers!</h2>
+
+    <div class="container">
+      <form action="/submit_form" method="post" enctype="multipart/form-data">
+        <label class="formLabels" for="fname">Name:</label>
+        <input class="formInputs" type="text" id="name" name="name" required />
+
+        <label class="formLabels" for="email">Email:</label>
+        <input class="formInputs" type="email" id="email" name="email" />
+
+        <label class="formLabels" for="phone">Phone:</label>
+        <input class="formInputs" type="tel" id="phone" name="phone" />
+
+        <label class="formLabels" for="file">Id proof:</label>
+        <input class="formInputs" type="file" id="file" name="file" required />
+
+        <label class="formLabels" for="vol"
+          >Duration(in hours): <span id="hourValue">4</span></label
+        >
+        <input
+          type="range"
+          id="duration"
+          name="duration"
+          min="1"
+          max="12"
+          oninput="document.getElementById('hourValue').textContent = this.value"
+          required
+        />
+
+        <label class="formLabels" for="website">Any URL for reference:</label>
+        <input class="formInputs" type="url" id="website" name="website" />
+
+        <label class="formLabels" for="age">Number of guests:</label>
+        <input class="formInputs" type="number" id="age" name="age" />
+
+        <label class="formLabels" for="meeting"
+          >Venue should be ready by when:</label
+        >
+        <input
+          class="formInputs"
+          type="datetime-local"
+          id="meeting"
+          name="meeting"
+        />
+
+        <label class="formLabels" for="colortheme">Color theme:</label>
+        <input
+          class="formInputs"
+          type="color"
+          id="colortheme"
+          name="colortheme"
+        />
+
+        <label class="formLabels">Event type:</label>
+        <div class="formRadio">
+          <input type="radio" id="wedding" name="eventType" value="wedding" />
+          <label for="wedding">wedding</label>
+          <input type="radio" id="birthday" name="eventType" value="birthday" />
+          <label for="birthday">birthday</label>
+          <input type="radio" id="naming" name="eventType" value="naming" />
+          <label for="naming ceremony">naming ceremony</label>
+          <input type="radio" id="other" name="eventType" value="other" />
+          <label for="other">other</label>
+        </div>
+
+        <label class="formLabels">Services Required:</label>
+        <div class="formCheckbox">
+          <input
+            type="checkbox"
+            id="catering"
+            name="services[]"
+            value="Catering"
+          />
+          <label for="catering">Catering</label>
+
+          <input
+            type="checkbox"
+            id="decoration"
+            name="services[]"
+            value="Decoration"
+          />
+          <label for="decoration">Decoration</label>
+
+          <input
+            type="checkbox"
+            id="photography"
+            name="services[]"
+            value="Photography"
+          />
+          <label for="photography">Photography</label>
+
+          <input type="checkbox" id="dj" name="services[]" value="DJ" />
+          <label for="dj">DJ</label>
+        </div>
+
+        <label class="formLabels" for="city">City:</label>
+        <select class="formInputs" id="city" name="city">
+          <option value="">--Select--</option>
+          <option value="goregaon">Goregaon</option>
+          <option value="andheri">Andheri</option>
+          <option value="ghatkopar">Ghatkopar</option>
+        </select>
+
+        <label class="formLabels" for="Address">Venue:</label>
+        <textarea
+          class="formInputs"
+          id="address"
+          name="address"
+          rows="4"
+        ></textarea>
+
+        <div class="formButtons">
+          <input class="formBtn" type="submit" value="Submit" />
+          <input class="formBtn" type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
